@@ -2,8 +2,8 @@
 
 
 :root{
-    --primary-color:
-    --secondary-color:
+    --primary-color:#0084fd;
+    --secondary-color:#b5ddff;
     --card-bg-color:
 
 }
@@ -47,6 +47,46 @@ a{
 }
 
 
+
+
+
+/* utlis */
+
+
+/* debug */
+
+.debug{
+    min-height: 80px;
+    background-color: rgb(216, 163, 98);
+    padding: 2rem;
+}
+
+/* Header */
+
+#header{
+    background-color: var(--primary-color);
+    color: aliceblue;
+}
+
+#header > .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#header > .container > .logo,
+#header > .container > nav{
+    padding: 25px;
+    background-color: cadetblue;
+}
+
+/* header responsive */
+
+
+
+
+/* <!-- section demo app --> */
+
+
 .row{
     margin: 0 -15px;
 
@@ -68,41 +108,36 @@ a{
     width: calc(100% / 3 * 2);
 }
 
-
-
-
-/* utlis */
-
-
-/* debug */
-
-.debug{
-    min-height: 80px;
-    background-color: rgb(216, 163, 98);
-    padding: 2rem;
-}
-
-/* Header */
-
-#header{
-    background-color: rgb(69, 69, 246);
-    color: aliceblue;
-}
-
-#header > .container{
-    display: flex;
-    justify-content: space-between;
-}
-
-#header > .container > .logo,
-#header > .container > nav{
-    padding: 25px;
-    background-color: cadetblue;
-}
-
-
-/* <!-- section demo app --> */
-
 .card{
     padding: 10px;
+    background-color: var(--secondary-color);
+
+}
+
+.col-1-2 .card{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-left{
+    width: 50%;
+}
+
+/* section demo app responsive */
+
+
+@media screen and (max-width: 768px){
+    .card-left{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .col-1-3{
+        width: 100%;
+    }
+    
+    .col-1-2{
+        width: 100%;
+    }
 }
