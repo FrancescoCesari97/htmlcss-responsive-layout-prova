@@ -4,7 +4,7 @@
 :root{
     --primary-color:#0084fd;
     --secondary-color:#b5ddff;
-    --card-bg-color:
+    --violet-color:#9792e4;
 
 }
 
@@ -16,7 +16,8 @@
 }
 
 img{
-    max-width: 100%;
+  height: max-content;
+ 
 }
 
 ul{
@@ -92,6 +93,7 @@ a{
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 
@@ -111,6 +113,7 @@ a{
 .card{
     padding: 10px;
     background-color: var(--secondary-color);
+    height: 100px;
 
 }
 
@@ -121,6 +124,12 @@ a{
 
 .card-left{
     width: 50%;
+    height: 100px;
+}
+
+.card-right{
+    width: 50%;
+    height: 100px;
 }
 
 /* section demo app responsive */
@@ -140,4 +149,23 @@ a{
     .col-1-2{
         width: 100%;
     }
+}
+
+
+/* <!-- section strategic planning --> */
+
+
+#strategic-planning{
+    background-color: var(--violet-color) ;
+
+}
+
+.planning{
+    padding: 15px;
+    width: 40%;
+}
+
+.card-right img{
+    display: flex;
+    align-items: end;
 }
